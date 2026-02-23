@@ -1,11 +1,9 @@
-version: "3.8"
-
 services:
   postgres:
     image: postgres
     restart: unless-stopped
     volumes:
-      - postgres-data:/var/lib/postgresql/data
+      - postgres-data:/var/lib/postgresql
     environment:
       POSTGRES_DB: kestra
       POSTGRES_USER: kestra
@@ -48,9 +46,9 @@ services:
             path: /app/plugins
           server:
             basicAuth:
-              enabled: false
+              enabled: true
               username: "admin@localhost.dev"
-              password: kestra
+              password: Admin1234
           repository:
             type: postgres
           storage:

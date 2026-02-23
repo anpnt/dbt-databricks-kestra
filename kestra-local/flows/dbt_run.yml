@@ -25,8 +25,8 @@ tasks:
                 type: databricks
                 catalog: dbt_workspace
                 schema: dbt_schema
-                host: dbc-3e66c097-a060.cloud.databricks.com
-                http_path: /sql/1.0/warehouses/23084c3798934421
+                host: dbc-67e2e03d-619f.cloud.databricks.com
+                http_path: /sql/1.0/warehouses/d778e0f89861bea8
                 token: "{{ env.DATABRICKS_TOKEN }}"
                 threads: 1
             target: dev
